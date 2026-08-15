@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="theme-color" content="#0c0c0c" />
+	<title>Фільм — UAKino</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="abracadabra.css" />
+</head>
+<body class="movie-page">
+
+	<header class="header">
+		<div class="header-inner">
+			<a class="logo" href="index.html">UA<span>Kino</span></a>
+			<div class="header-actions header-actions-right">
+				<a href="index.html" class="btn-back">Назад</a>
+				<a href="reg/aut.html" class="btn-auth">Увійти</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="movie-backdrop" id="movie-backdrop"></div>
+
+	<main class="movie-main">
+		<div class="movie-layout" id="movie-content">
+			<div class="movie-poster-wrap">
+				<div class="skeleton-poster movie-poster-skeleton"></div>
+			</div>
+			
+			<div class="movie-info">
+				<div class="skeleton-line" style="width:70%;height:28px;margin-bottom:12px"></div>
+				<div class="skeleton-line short" style="margin-bottom:20px"></div>
+				<div class="skeleton-line"></div>
+				<div class="skeleton-line"></div>
+				<div class="skeleton-line short"></div>
+				
+			</div>
+		</div>
+
+		<section class="movie-trailer-section" id="trailer-section" hidden>
+			<h2 class="section-title">Трейлер</h2>
+			
+			<div class="trailer-wrap">
+				<iframe id="trailer-frame" title="Трейлер" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+			</div>
+			
+		</section>
+
+		<section class="movie-cast-section" id="cast-section" hidden>
+			<h2 class="section-title">Актори</h2>
+			<div class="cast-grid" id="cast-grid"></div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p>UAKino — фільми та серіали онлайн у HD якості.</p>
+	</footer>
+
+	<script src="scripts/movie.js"></script>
+</body>
+</html>

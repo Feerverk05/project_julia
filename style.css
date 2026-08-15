@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWhnc2JzazJndDNkaGFvajJsZTF2dW1tNWZsM3ZnbWdscHZ4cnhvZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gTURHJs4e2Ies/giphy.gif) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-form {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.auth-form h1 {
+  text-align: center;
+  color: #ccc;
+}
+
+.auth-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.auth-actions button {
+  margin-top: 0;
+  flex: 1;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #141414;
+  opacity: 90%;
+  border-radius: 7px;
+  color: #fff;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+button {
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 15px;
+  background-color: #141414;
+  opacity: 90%;
+  border-radius: 7px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .auth-page {
+    padding: 16px;
+    align-items: flex-start;
+    padding-top: max(16px, env(safe-area-inset-top));
+  }
+
+  .auth-form {
+    margin: 0;
+    padding: 24px 20px;
+    border-radius: 12px;
+  }
+
+  .auth-form h1 {
+    font-size: 1.35rem;
+    line-height: 1.3;
+  }
+
+  input,
+  button {
+    font-size: 16px;
+  }
+
+  .auth-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .auth-actions button {
+    width: 100%;
+    flex: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .auth-form {
+    padding: 20px 16px;
+  }
+
+  .auth-form h1 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWhnc2JzazJndDNkaGFvajJsZTF2dW1tNWZsM3ZnbWdscHZ4cnhvZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gTURHJs4e2Ies/giphy.gif) no-repeat center center fixed;
+  background-size: cover;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+  background-color: rgba(20, 20, 20, 0.9);
+  border-radius: 7px;
+  color: #fff;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+button {
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 15px;
+  background-color: rgba(20, 20, 20, 0.9);
+  border-radius: 7px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 15px;
+}
+
+.general {
+  text-align: center;
+  background-color: rgba(37, 37, 37, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.general .padpiska {
+  background-color: transparent;
+  color: #fff;
+  display: flex;      
+  align-items: center;
+  justify-content: center; 
+  gap: 12px;               
+}
+
+.general .padpiska h2 {
+  margin: 0; 
+} 
+
+.general .padpiska button {
+  margin-top: 0;
+}
+
+.btn-home {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 28px;
+  background-color: #f0a020;
+  border-radius: 7px;
+  color: #111;
+  font-weight: 600;
+  cursor: pointer;
+  max-width: 280px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-home:hover {
+  background-color: #ffb840;
+}
+
+.ggeneral {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  padding-top: max(24px, env(safe-area-inset-top));
+  padding-bottom: max(24px, env(safe-area-inset-bottom));
+  box-sizing: border-box;
+}
+
+.ggeneral .general {
+  width: 100%;
+  max-width: 420px;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .general {
+    padding: 20px 16px;
+  }
+
+  .general h2 {
+    font-size: 1rem;
+    word-break: break-word;
+  }
+
+  .general .padpiska {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .general .padpiska button {
+    width: 100%;
+  }
+
+  .btn-home {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .general h2 {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}

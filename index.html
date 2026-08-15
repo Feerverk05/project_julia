@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="theme-color" content="#0c0c0c" />
+	<title>NEGR KINO — фільми та серіали онлайн</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="abracadabra.css" />
+</head>
+<body>
+
+	<header class="header">
+		<div class="header-inner">
+			<a class="logo" href="index.html">UA<span>Kino</span></a>
+			<button class="menu-toggle" id="menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+				<span></span><span></span><span></span>
+			</button>
+			<div class="search-wrap">
+				<span class="search-icon" aria-hidden="true"></span>
+				<input type="search" placeholder="Знайти фільм або серіал..." id="search" />
+			</div>
+			<div class="header-actions">
+				<a href="index.html?favorites=true">Обране</a>
+			
+				<a href="reg/aut.html" class="btn-auth">Увійти</a>
+			</div>
+		</div>
+		<div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+		<nav class="nav" id="main-nav">
+			<a href="#" class="active" data-category="movies">Фільми</a>
+			<a href="#" data-category="series">Серіали</a>
+			<a href="#" data-category="cartoons">Мультфільми</a>
+			<a href="#" data-category="anime">Аніме</a>
+			<a href="#" data-category="trailers">Трейлери</a>
+			<a href="#" data-category="new">Новинки</a>
+			<a href="#" data-category="top">Топ рейтинг</a>
+			<div class="nav-mobile-actions">
+				<a href="index.html?favorites=true">Обране</a>
+				<a href="reg/aut.html" class="btn-auth">Увійти</a>
+			</div>
+		</nav>
+	</header>
+
+	<section class="hero">
+		<div class="hero-banner" id="hero-banner">
+			<div class="hero-content">
+				<div class="hero-badge">
+					<span class="live-dot"></span>
+					Зараз дивляться
+				</div>
+				<h1 id="hero-title">Завантаження...</h1>
+				<div class="hero-meta" id="hero-meta"></div>
+				<p class="hero-desc" id="hero-desc"></p>
+				<a class="btn-watch" href="#" id="hero-watch">Дивитися</a>
+			</div>
+		</div>
+	</section>
+
+	<div class="section-tabs">
+		<button class="active" data-tab="latest">Останні додані</button>
+		<button data-tab="online">Дивляться зараз</button>
+		<button data-tab="best">Найкращі</button>
+	</div>
+
+	<main class="main">
+		<h2 class="section-title" id="section-label">Останні додані</h2>
+		<div class="grid" id="movie-grid"></div>
+		<button class="load-more" id="load-more">Завантажити ще</button>
+	</main>
+
+	<footer class="footer">
+		<p>UAKino — фільми та серіали онлайн у HD якості.</p>
+		<p style="margin-top:8px"><a href="#">Telegram-канал</a></p>
+	</footer>
+
+	<script src="scripts/mobile-nav.js"></script>
+	<script src="scripts/abracadabra.js"></script>
+</body>
+</html>
